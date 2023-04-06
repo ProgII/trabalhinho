@@ -18,5 +18,6 @@ public class TrabalhoProg2 {
         // TODO code application logic here
     }
     int x;
+    int j;
     
 }
