@@ -21,4 +21,5 @@ public class TrabalhoProg2 {
     int c;
     int j;
     int f;
+    int k;
 }
