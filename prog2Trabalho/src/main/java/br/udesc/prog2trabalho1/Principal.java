@@ -14,7 +14,7 @@ import java.util.function.Consumer;
  */
 public class Principal {
     
-    
+    public static TarefasEstudos tarefa = new TarefasEstudos();
     public static List<Tarefa> listaTarefas = new ArrayList();
     public static List<Usuario> listaUsuarios = new ArrayList();
     public static Usuario admin = new Usuario("admin", "admin", "admin", "admin");

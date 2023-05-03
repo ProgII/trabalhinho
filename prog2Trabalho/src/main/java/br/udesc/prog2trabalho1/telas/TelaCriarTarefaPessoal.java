@@ -4,6 +4,9 @@
  */
 package br.udesc.prog2trabalho1.telas;
 
+import br.udesc.prog2trabalho1.TarefasEstudos;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 11835692974
@@ -40,7 +43,7 @@ public class TelaCriarTarefaPessoal extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
         txtAreaPessoal = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel5.setBackground(new java.awt.Color(0, 0, 0));
         jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(250, 88, 166), 2));
@@ -183,25 +186,20 @@ public class TelaCriarTarefaPessoal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCriarTarefa4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCriarTarefa4ActionPerformed
-        /*String tituloTarefa = txtTituloTarefa.getText();
-        String descricaoTarefa = txtTituloTarefa.getText();
-        String catergoriaTarefa = cmbCategorias.getSelectedItem().toString();
-        String dificuldadeTarefa = cmbDificuldade.getSelectedItem().toString();
-        String prazoTarefa = cmbPrazo.getSelectedItem().toString();
+        String tituloTarefa = txtTituloTarefa4.getText();
+        String descricaoTarefa = txtTituloTarefa4.getText();
+        String areaPessoal = txtAreaPessoal.getText();
+        String dificuldadeTarefa = cmbDificuldade4.getSelectedItem().toString();
+        String prazoTarefa = cmbPrazo4.getSelectedItem().toString();
+        
+         if (tituloTarefa.equals("") && descricaoTarefa.equals("") && areaPessoal.equals("")){
+           JOptionPane.showMessageDialog(null, "Verifique se todos os campos foram preenchidos corretamente e tente novamente!");
+       }else{
+           TarefasEstudos tarefaEstudos = new TarefasEstudos(prazoTarefa, descricaoTarefa, prazoTarefa, dificuldadeTarefa, prazoTarefa);
+           JOptionPane.showMessageDialog(null, "Tarefa criada com sucesso!");
+       }
 
-        switch (catergoriaTarefa){
-            case "Estudos":
-            TarefasEstudos tarefaEstudos = new TarefasEstudos(prazoTarefa, descricaoTarefa, prazoTarefa, dificuldadeTarefa, prazoTarefa);
-            break;
-            case "Pessoal":
-            TarefasPessoal tarefaPessoal = new TarefasPessoal(prazoTarefa, descricaoTarefa, prazoTarefa, dificuldadeTarefa, prazoTarefa);
-            break;
-            case "Trabalho":
-            TarefasTrabalho tarefaTrabalho = new TarefasTrabalho(prazoTarefa, descricaoTarefa, prazoTarefa, dificuldadeTarefa, prazoTarefa);
-            break;
-        }
-        */
-
+     
     }//GEN-LAST:event_btnCriarTarefa4ActionPerformed
 
     private void txtDescricao4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDescricao4ActionPerformed
@@ -248,70 +246,18 @@ public class TelaCriarTarefaPessoal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCriarTarefa;
-    private javax.swing.JButton btnCriarTarefa1;
-    private javax.swing.JButton btnCriarTarefa2;
-    private javax.swing.JButton btnCriarTarefa3;
     private javax.swing.JButton btnCriarTarefa4;
-    private javax.swing.JComboBox<String> cmbDificuldade;
-    private javax.swing.JComboBox<String> cmbDificuldade1;
-    private javax.swing.JComboBox<String> cmbDificuldade2;
-    private javax.swing.JComboBox<String> cmbDificuldade3;
     private javax.swing.JComboBox<String> cmbDificuldade4;
-    private javax.swing.JComboBox<String> cmbPrazo;
-    private javax.swing.JComboBox<String> cmbPrazo1;
-    private javax.swing.JComboBox<String> cmbPrazo2;
-    private javax.swing.JComboBox<String> cmbPrazo3;
     private javax.swing.JComboBox<String> cmbPrazo4;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JTextField txtAreaPessoal;
-    private javax.swing.JTextField txtDescricao;
-    private javax.swing.JTextField txtDescricao1;
-    private javax.swing.JTextField txtDescricao2;
-    private javax.swing.JTextField txtDescricao3;
     private javax.swing.JTextField txtDescricao4;
-    private javax.swing.JTextField txtDisciplina;
-    private javax.swing.JTextField txtDisciplina1;
-    private javax.swing.JTextField txtDisciplina2;
-    private javax.swing.JTextField txtDisciplina3;
-    private javax.swing.JTextField txtTituloTarefa;
-    private javax.swing.JTextField txtTituloTarefa1;
-    private javax.swing.JTextField txtTituloTarefa2;
-    private javax.swing.JTextField txtTituloTarefa3;
     private javax.swing.JTextField txtTituloTarefa4;
     // End of variables declaration//GEN-END:variables
 }

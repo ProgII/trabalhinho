@@ -40,7 +40,7 @@ public class TelaCriarTarefaTrabalho extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
         txtNomeTrabalho = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel5.setBackground(new java.awt.Color(0, 0, 0));
         jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(250, 88, 166), 2));

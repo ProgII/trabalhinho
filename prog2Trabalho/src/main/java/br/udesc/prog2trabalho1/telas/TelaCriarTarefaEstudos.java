@@ -3,6 +3,7 @@ package br.udesc.prog2trabalho1.telas;
 import br.udesc.prog2trabalho1.TarefasEstudos;
 import br.udesc.prog2trabalho1.TarefasPessoal;
 import br.udesc.prog2trabalho1.TarefasTrabalho;
+import javax.swing.JOptionPane;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -45,7 +46,7 @@ public class TelaCriarTarefaEstudos extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         txtDisciplina = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(250, 88, 166), 2));
@@ -193,7 +194,13 @@ public class TelaCriarTarefaEstudos extends javax.swing.JFrame {
        String dificuldadeTarefa = cmbDificuldade.getSelectedItem().toString();
        String prazoTarefa = cmbPrazo.getSelectedItem().toString();
        
-       
+       if (tituloTarefa.equals("") && descricaoTarefa.equals("") && disciplina.equals("")){
+           JOptionPane.showMessageDialog(null, "Verifique se todos os campos foram preenchidos corretamente e tente novamente!");
+       }else{
+           TarefasEstudos tarefaEstudos = new TarefasEstudos(disciplina, disciplina, prazoTarefa, dificuldadeTarefa, prazoTarefa);
+           JOptionPane.showMessageDialog(null, "Tarefa criada com sucesso!");
+       }
+
        
     }//GEN-LAST:event_btnCriarTarefaActionPerformed
 

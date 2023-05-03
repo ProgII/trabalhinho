@@ -32,7 +32,7 @@ public class TelaEscolhaCategoriaTarefa extends javax.swing.JFrame {
         bntPessoal = new javax.swing.JButton();
         btnTrabalho = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(250, 88, 166), 2));
